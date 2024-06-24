@@ -1,52 +1,53 @@
 import { useState,useEffect } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
-import First from './components/First'
-import Second from './components/Second'
-import Third from './components/Third'
-import Fourth from './components/Fourth'
-import Fifth from './components/Fifth'
-import Footer from './components/Footer'
+import Navbr from './components/Navbr'
+import Fist from './components/Fist'
+import Sec from './components/Sec'
+import Three from './components/Three'
+import Four from './components/Four'
+import Five from './components/Five'
+import Foot from './components/Foot'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import Login from './components/Login'
+import Log from './components/Log'
 
 function App() {
+
   let router = createBrowserRouter([
     {
       path:'/',
       element:
       <>
       <div className='internee max-w-[100vw] overflow-hidden'>
-      <Navbar/>
-       <First />
-       <Second/>
-       <Third />
-       <Fourth/>
-       <Fifth />
-       <Footer/>
+      <Navbr/>
+       <Fist/>
+       <Sec/>
+       <Three />
+       <Four/>
+       <Five />
+       <Foot/>
        </div>
        </>  
    },
     {
        path:'/login',
-       element:<Login/>
+       element:<Log/>
     },
     {
       path:'/internships',
-      element:<><Navbar/> <Third/></>
+      element:<><Navbr/> <Three/></>
    },
    {
     path:'/reviews',
-    element:<div className='overflow-hidden'><Navbar/> <Fifth/></div>
+    element:<div className='overflow-hidden'><Navbr/> <Five/></div>
  },
  {
   path:'/contact',
-  element:<><Navbar/> <Footer/></>
+  element:<><Navbr/> <Foot/></>
 }
 ])
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router}/> 
     </>
   )
 }

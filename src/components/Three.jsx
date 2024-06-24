@@ -16,7 +16,7 @@ import chatbotImg from '../assets/internship_array/chatbotDevelopment.webp';
 import figmaImg from '../assets/internship_array/figma.png';
 import analysisImg from '../assets/internship_array/analysis.webp';
 
-const Third = () => {
+const Three = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000
@@ -223,4 +223,4 @@ const Third = () => {
   );
 };
 
-export default Third;
+export default Three;

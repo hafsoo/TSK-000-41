@@ -4,7 +4,7 @@ import './CSS/fifthCSS.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-const Fifth = () => {
+const Five= () => {
     useEffect(() => {
         AOS.init({
             duration : 2000
@@ -74,4 +74,4 @@ const Fifth = () => {
     );
 };
 
-export default Fifth;
+export default Five;

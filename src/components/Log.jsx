@@ -1,6 +1,6 @@
 import React, { useState,useRef } from "react";
 import { Link } from "react-router-dom";
-const Login = () => {
+const Log = () => {
   const [pass, setpass] = useState("");
   const [email, setemail] = useState("");
   const [show, setShow] = useState(false);
@@ -71,4 +71,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Log;

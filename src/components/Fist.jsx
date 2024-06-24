@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-const First = () => {
+const Fist = () => {
     const el = useRef();
 
   useEffect(() => {
@@ -47,4 +47,4 @@ const First = () => {
   )
 }
 
-export default First
+export default Fist

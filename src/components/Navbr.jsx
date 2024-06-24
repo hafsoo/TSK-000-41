@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import {Link} from 'react-router-dom'
-const Navbar = () => {
+const Navbr = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -46,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbr;
